@@ -1,0 +1,28 @@
+<!doctype html>
+<!-- Built with pop-up-birthday-card -->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#eee8db">
+<title>/*MESSAGE_HTML*/</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;overflow-x:hidden}body{font-family:Georgia,'Times New Roman',serif;color:#283c55;background:#eee8db;background-image:radial-gradient(#b3a99030 .7px,transparent .7px);background-size:7px 7px}body:before{content:'';position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 40%,#fff9e875,transparent 65%)}main{position:relative;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:25px 18px 24px}.heading{text-align:center;margin:0;position:relative;z-index:2}.heading .tiny{font:11px/1.4 system-ui,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#7b7d80}.heading h1{font-size:clamp(21px,3vw,32px);font-weight:normal;margin:8px 0 0;letter-spacing:-.5px}.heading h1 em{font-weight:bold}.stage{width:100%;height:min(68vh,670px);min-height:340px;max-width:1220px;position:relative;touch-action:none;cursor:grab}.stage:active{cursor:grabbing}.stage canvas{width:100%;height:100%;display:block}.loading{position:absolute;inset:0;display:grid;place-items:center;font:14px system-ui;letter-spacing:1px}.controls{text-align:center;position:relative;z-index:2;margin-top:-6px}.toggle{font:600 14px/1 system-ui,sans-serif;border:1.5px solid #283c55;background:#e8a9af;color:#253b52;border-radius:7px;padding:15px 31px;box-shadow:0 4px 0 #283c55;cursor:pointer;min-width:160px;transition:transform .15s,box-shadow .15s}.toggle:hover{background:#f1bcc1;transform:translateY(-1px);box-shadow:0 5px 0 #283c55}.toggle:active{transform:translateY(3px);box-shadow:0 1px 0 #283c55}.toggle:focus-visible,.angle:focus-visible{outline:3px solid #678bb2;outline-offset:5px}.toggle:disabled{opacity:.6;cursor:wait}.hint{font:12px/1.7 system-ui,sans-serif;color:#7c7b78;margin:14px 0 0}.angle-wrap{display:flex;align-items:center;justify-content:center;gap:12px;font:11px system-ui;color:#8c8b87;margin-top:12px}.angle{accent-color:#526f91;width:148px;height:14px;cursor:pointer}.note{font:10px/1.6 system-ui,sans-serif;letter-spacing:2px;color:#9b9589;margin:21px 0 0}.confetti{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}@media(max-width:600px){main{padding:22px 8px 24px}.stage{height:54svh;min-height:310px}.heading h1{font-size:25px}.heading .tiny{font-size:9px;letter-spacing:2.5px}.controls{margin-top:-14px}.note{margin-top:19px}}@media(prefers-reduced-motion:reduce){.toggle{transition:none}}
+[hidden]{display:none!important}.sound{display:block;margin:15px auto 0;background:transparent;border:1px solid #a7a79b;border-radius:20px;padding:9px 17px;color:#3c5671;font:12px system-ui;cursor:pointer}.sound:focus-visible{outline:3px solid #678bb2;outline-offset:3px}#controls[aria-hidden="true"]{visibility:hidden}.loading:empty:after{content:'';width:20px;height:20px;border:2px solid #d6cfc0;border-top-color:#829bc9;border-radius:50%;animation:loading-turn 1s linear infinite}@keyframes loading-turn{to{transform:rotate(360deg)}}@media(prefers-reduced-motion:reduce){.loading:empty:after{animation:none}}
+
+</style>
+</head>
+<body>
+<main>
+<header class="heading"><div class="tiny">A birthday pop-up card</div><h1>/*MESSAGE_HTML*/</h1></header>
+<div hidden aria-hidden="true"><img id="asset-background" src="/*BACKGROUND_DATA*/" alt=""><img id="asset-foreground" src="/*FOREGROUND_DATA*/" alt=""><audio id="music-track" preload="none" src="/*MUSIC_DATA*/"></audio></div>
+<div id="stage" class="stage" role="img" aria-label="可点击开合的立体生日卡"><div id="loading" class="loading" role="status" aria-label="加载中"></div></div>
+<div id="controls" class="controls" aria-hidden="true"><button id="toggle" class="toggle" disabled aria-expanded="false">打开生日卡</button><button id="sound" class="sound" type="button" aria-pressed="false">♫ 播放音乐</button><p class="hint" id="hint" aria-live="polite">点击卡片，展开这份祝福</p><label class="angle-wrap" for="angle"><span>合上</span><input id="angle" class="angle" type="range" min="0" max="100" value="0" aria-label="卡片展开程度" disabled><span>展开</span></label></div>
+<p class="note">A LITTLE PAPER MAGIC</p>
+</main><canvas id="confetti" class="confetti" aria-hidden="true"></canvas>
+<script>/*
+/*THREE_LICENSE*/
+*/
+/*THREE_LIBRARY*/</script>
+<script>const CONFIG=/*CONFIG_DATA*/;const ASSETS={foreground:document.getElementById("asset-foreground").src,background:document.getElementById("asset-background").src};</script>
+<script>/*APP_CODE*/</script>
+</body></html>
