@@ -2,11 +2,15 @@
 
 使用用户当前照片，不把历史家庭照片、姓名或生成结果带入新任务。所有引用图都明确角色：身份/姿势、画风、场景/结构。
 
+## 默认画风与用户优先级
+
+先看用户是否指定画风；有要求则按要求。没有要求时，采用明显的可爱卡通：头部略放大、圆润轮廓、简化点/弧线五官、腮红、轻松的笑容、粗细自然的深色描边和大块平涂。保留可辨识的发型、衣着、配饰及站位，不追求皮肤、皱纹和头发的照片级细节。不能只给真人照片加绘画纹理就当作卡通。
+
 ## 前景提示词骨架
 
 按实际照片填写具体外貌与衣着，不保留示例人物设定：
 
-> Create one flat die-cut illustration for a 3D paper pop-up card. The supplied photograph is the identity, clothing, pose and grouping reference. Preserve the actual number of people, recognizable facial features, hair, clothing and overlapping pose. [Describe the observed group and relevant details.] Keep connected interactions together. Style: [user style or warm gouache stationery, navy hand-inked outlines, subtle paper grain]. Add a thin warm-ivory paper edge. Isolate the entire subject on a genuinely transparent background, including gaps around limbs. Leave transparent margins; no clipped heads or hands. Give the lower edge a clean baseline suitable for a folding tab. No landscape, ground shadow, text, extra people or 3D camera perspective.
+> Create one flat die-cut illustration for a 3D paper pop-up card. The supplied photograph is the identity, clothing, pose and grouping reference. Preserve the actual number of people, identifying hairstyles, clothing, accessories and overlapping pose. For the default cartoon treatment, simplify faces rather than reproducing photographic facial detail. [Describe the observed group and relevant details.] Keep connected interactions together. Style: [user-specified style; otherwise cute picture-book cartoon with rounded slightly oversized heads, simple dot/curve eyes, rosy cheeks, broad flat colors, navy hand-inked outlines and subtle paper grain. Avoid realistic skin, individually rendered hair, detailed teeth and photographic volume]. Add a thin warm-ivory paper edge. Isolate the entire subject on a genuinely transparent background, including gaps around limbs. Leave transparent margins; no clipped heads or hands. Give the lower edge a clean baseline suitable for a folding tab. No landscape, ground shadow, text, extra people or 3D camera perspective.
 
 内置 imagegen 的 `transparent_background` 设为 true。调用前查看本地引用图；生成后检查实际 alpha 与轮廓。不要用黑白棋盘格图案冒充透明。
 

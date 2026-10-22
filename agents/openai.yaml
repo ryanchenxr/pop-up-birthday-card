@@ -1,4 +1,4 @@
 interface:
   display_name: "立体生日卡"
-  short_description: "把照片做成可点击开合、带音乐的立体纸艺生日卡，支持单文件导出"
+  short_description: "照片变卡通立体生日卡：默认随机一款、按指定风格制作，支持自定义人物祝福"
   default_prompt: "用 $pop-up-birthday-card 把我提供的照片做成立体生日卡，保留人物特征，先在本地完成和验证。"
